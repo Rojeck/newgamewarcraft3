@@ -1,0 +1,116 @@
+.characters-list {
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+html {
+    background-color: rgb(214, 214, 214);
+}
+.card {
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    border: 1px solid gray;
+    
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.character-img {
+    width: 100%;
+    height: 65%;
+    border: 1px solid black;
+}
+.health-line-background {
+    width: 100%;
+    height: 5px;
+    background-color:grey;
+    position: relative;
+    z-index: 1;
+}
+.health-line {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 40%;
+    height: 5px;
+    z-index: 2;
+    background-color: red;
+}
+.name {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 800;
+}
+.health-number {
+    text-align: center;
+    font-size: 23px;
+    padding: 4px;
+}
+.properties {
+    display: flex;
+    justify-content: space-between;
+}
+.property {
+    font-size: 18px;
+    padding: 15px;
+    color: rgb(75, 75, 75);
+}
+.property img {
+    width: 30px;
+    height: 30px;
+}
+
+.hidden {
+    display: none;
+}
+.blackFrame {
+    outline: 3px solid black;
+}
+.battle-field {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    padding: 10px;
+}
+main {
+    text-align: center;
+    position: relative;
+}
+.start {
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: white;
+    font-size: 22px;
+    background-color: black;
+    transition: all .5s;
+    border: none;
+}
+.fight {
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: white;
+    font-size: 22px;
+    background-color: black;
+    transition: all .5s;
+    border: none;
+}
+
+.start:hover {
+    background-color: red;
+}
